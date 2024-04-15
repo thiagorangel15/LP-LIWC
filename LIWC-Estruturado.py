@@ -1,10 +1,10 @@
 import liwc
+
 parse, category_names = liwc.load_token_parser("./LIWC2007_Portugues_win.dic")
 
 archive = open("arquivo.txt","r", encoding = "utf-8")
 
-
-specials_caracters = {
+special_caracters = {
     'á': 'a',
     'à': 'a',
     'â': 'a',
@@ -38,8 +38,8 @@ text_list = list(text)
 text_list_with_no_specials = list()
 
 for letter in text_list:
-    if letter in specials_caracters:
-        text_list_with_no_specials.append(specials_caracters[letter])
+    if letter in special_caracters:
+        text_list_with_no_specials.append(special_caracters[letter])
     else:
         text_list_with_no_specials.append(letter)
 
