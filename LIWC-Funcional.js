@@ -36,8 +36,7 @@ fs.readFile("./arquivoIngles.txt","utf-8", (err, data) => {
     const contagemFinal = contarSensacoes(palavraTratadas,0,contagemInicial)
     const tamanhoTexto = palavraTratadas.length
 
-   // console.log(contagemFinal)
-   // console.log(tamanhoTexto)
+
 
     const percentualPosemo = (contagemFinal.posemo/tamanhoTexto)*100
     const percentualNegemo = (contagemFinal.negemo/tamanhoTexto)*100
