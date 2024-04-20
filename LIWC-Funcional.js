@@ -2,7 +2,6 @@
 const liwc = require('./liwc.js');
 const fs = require('fs')
 
-// let a = liwc.fromText("my english is horrible");
 
 fs.readFile("./arquivoIngles.txt","utf-8", (err, data) => {
     if (err){
